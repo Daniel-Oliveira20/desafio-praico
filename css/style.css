@@ -95,8 +95,30 @@ main{
     box-shadow: 0px 0px 10px black;
 }
 
+
+.tprincipal{
+    color: #000000fb;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
 main h2{
     font-family: var(--fonte-android);
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.5em;
+}
+
+main strong{
+    color: var(--cor4);
+    font-weight: bold;
 }
 
 main img{
@@ -104,13 +126,19 @@ main img{
 }
 
 main img.gugdoid{
-    width: 60%;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
 
 main a{
     text-decoration: none;
+    color: var(--cor5);
+    font-weight: bold;
+}
+
+main a:hover{
+    text-decoration: underline;
 }
 
 /*RODAPÉ*/
