@@ -41,6 +41,10 @@ body{
     font-family: var(--fonte-padrao);
 }
 
+a.link::after{
+    content: "\1F4CE";
+}
+
 
 /*CABEÇALHO*/
 header{
@@ -132,6 +136,7 @@ main img.gugdoid{
 }
 
 main a{
+    background-color: var(--cor2);
     text-decoration: none;
     color: var(--cor5);
     font-weight: bold;
@@ -139,6 +144,28 @@ main a{
 
 main a:hover{
     text-decoration: underline;
+}
+
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+aside ul{
+    list-style-type: "\2714";
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside h3{
+    background-color: var(--cor4);
+    color: #fff;
+    padding: 5px;
+    margin-top: -10px;
+    margin-right: -10px;
+    margin-left: -10px;
+    
 }
 
 /*RODAPÉ*/
@@ -149,5 +176,12 @@ footer{
 }
 
 footer a{
+    color: #fff;
+    font-weight: bolder;
     text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
 }
